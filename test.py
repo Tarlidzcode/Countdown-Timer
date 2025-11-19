@@ -1,19 +1,22 @@
 import time
 
-def countdown(t):
+val = input("Enter the number of seconds you wish to countdown on:  ")
+
+def countdown():
     try:
         t = int(val)
         while t > 0:
-          print(t)
+          print(f"Time remaining: {t} seconds")
           time.sleep(1)
           t -= 1
          
     except ValueError:
         print("Please enter a valid number ")
         
-val = input("Enter the number of seconds you wish to countdown on:  ")
 
 
-countdown(val)  
+
+countdown()  
 print("Time set is up")
+
 
